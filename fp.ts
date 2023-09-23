@@ -9,7 +9,7 @@ const PORT = 3000;
 const BASE_DIRECTORY = path.join(__dirname, 'safe');
 
 app.get('/getFile', (req, res) => {
-    // THIS IS VULNERABLE! DO NOT USE IN PRODUCTION!
+    
     const filePath = path.join(BASE_DIRECTORY, req.query.filename);
 
     // Send the file as response
